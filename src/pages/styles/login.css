@@ -1,0 +1,170 @@
+.sec1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	background-color: #f8faff;
+}
+
+#blueEllipse {
+	position: absolute;
+	top: 72px;
+	left: 315px;
+}
+
+#redEllipse {
+	position: absolute;
+	top: 27px;
+	left: 20px;
+}
+
+#bottomSquare {
+	position: absolute;
+	bottom: 0;
+	right: 45%;
+}
+
+#topSquare {
+	position: absolute;
+	top: 0;
+	right: 30px;
+}
+
+.sec2 {
+	color: #4f4f4f;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	padding: 0 90px;
+}
+
+.sec2 h1 {
+	font-weight: 500;
+	text-align: left;
+	font-size: 32px;
+}
+
+/* .sec2::before {
+	content: "";
+	background-color: #e8f0ff;
+	width: 168px;
+	height: 178px;
+	position: absolute;
+	top: -45px;
+	right: 40px;
+	border-radius: 20px;
+	z-index: 100;
+}
+
+.sec2::after {
+	content: "";
+	background-color: #fff;
+	width: 200px;
+	height: 235px;
+	position: absolute;
+	top: -90px;
+	right: 20px;
+	border: 5px dashed #e8f0ff;
+	border-radius: 20px;
+} */
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.input-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.show-pass {
+	position: absolute;
+	right: 10px;
+	top: 40px;
+	cursor: pointer;
+}
+
+.input-container p {
+	font-size: 12px;
+	font-weight: 500;
+	color: red;
+	position: absolute;
+	top: 65px;
+}
+
+label::after {
+	content: "*";
+	color: red;
+	margin-left: 2px;
+}
+
+input {
+	border-radius: 8px;
+	border: 1px solid #cdd5e0;
+	padding: 12px 16px;
+	font-size: 16px;
+}
+
+.field-password {
+	border-radius: 8px;
+	border: 1px solid red;
+	padding: 12px 16px;
+	font-size: 16px;
+}
+
+::placeholder {
+	color: #cdd5e0;
+}
+
+.btn-login {
+	margin-top: 20px;
+	text-transform: capitalize;
+}
+
+.break-point {
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid #cdd5e0;
+	line-height: 0.1em;
+	margin: 10px 0 20px;
+	color: #cdd5e0;
+	font-size: 14px;
+}
+
+.break-point span {
+	background: #fff;
+	padding: 0 10px;
+}
+
+.btn-google {
+	margin-top: -10px;
+}
+
+.btn-google button {
+	width: 100%;
+	border: 1px solid #cdd5e0;
+	border-radius: 8px;
+	padding: 8px;
+	background-color: #fff;
+	font-weight: bolder;
+	font-size: 14px;
+	color: #858585;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+
+.btn-google button:hover {
+	cursor: pointer;
+	background-color: rgb(244, 244, 244);
+	transition-duration: 0.3s;
+}

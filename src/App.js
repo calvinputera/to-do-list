@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
+import Todo from "./pages/Todo";
+import { AuthContext, AuthContextProfider } from "./helper/AuthContext";
+import { useState } from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [authState, setAuthState] = useState(false);
+	const [email, setEmail] = useState("");
+
+	return (
+		<AuthContext.Provider
+			value={{
+				email,
+				authState,
+				setEmail,
+				setAuthState,
+			}}
+		>
+			<Routes>
+				<Route element={<Login />} index />
+				<Route index path="/dashboard" element={<Dashboard />} />
+				<Route path="/todo" element={<Todo />} />
+			</Routes>
+		</AuthContext.Provider>
+	);
 }
 
 export default App;

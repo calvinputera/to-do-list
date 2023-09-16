@@ -1,0 +1,17 @@
+{
+  "user": 
+    {
+      "id": 1,
+      "email": "user@mail.com",
+      "password": "pass123"
+    },
+  
+  "todo": [
+    {
+      "id": 1,
+      "task": "apappun",
+      "status": false,
+      "time": "waktu"
+    }
+  ]
+}
