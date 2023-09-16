@@ -1,0 +1,44 @@
+.todo-btn {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+.todo-container {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.todo-notchecked {
+	width: 50%;
+	border: 1px solid grey;
+	border-radius: 1rem;
+	padding: 20px;
+}
+
+.todo-notchecked > p {
+	font-weight: bold;
+}
+
+.todo-checked > p {
+	font-weight: bold;
+}
+
+.todo-checked {
+	width: 50%;
+	border: 1px solid grey;
+	border-radius: 1rem;
+	padding: 20px;
+}
+
+.todo-item {
+	border: 1px solid grey;
+	border-radius: 1rem;
+	padding: 10px;
+}
+
+.todo-date {
+	color: rgb(65, 205, 240);
+}

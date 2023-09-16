@@ -6,8 +6,9 @@ const Dashboard = () => {
 	return (
 		<Box sx={{ display: "flex" }}>
 			<SideNav />
-			Dashboard
-			<Box component="main" sx={{ flexGrow: 1, p: 3 }}></Box>
+			<Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+				<h1>📝 Dashboard</h1>
+			</Box>
 		</Box>
 	);
 };
